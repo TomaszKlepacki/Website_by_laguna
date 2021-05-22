@@ -1,0 +1,39 @@
+.header {
+  height: 95vh;
+  /* background-image: linear-gradient(to right top, */
+  background-image: linear-gradient(
+    to right bottom,
+     rgba(9, 84, 196, 0.774),
+      rgba(2, 37, 90, 0)),
+       url(../img/dance_3.png);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
+  
+  
+  /* box-shadow: 0 0 6px 6px white inset; */
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+&__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+
+}
+
+
+&__logo {
+  height: 15rem;
+}
+
+&__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+}
