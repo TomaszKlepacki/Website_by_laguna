@@ -33,7 +33,6 @@ transform: skewX(12deg);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
 
@@ -44,7 +43,7 @@ transform: skewX(12deg);
 
     &__img{
         height: 100%;
-        transform: translateX(2rem) scale(1.2);
+        transform: translateX(3rem) scale(1.1);
         backface-visibility: hidden;
         transition: all .5s;
         background-color: transparent;
@@ -61,6 +60,7 @@ transform: skewX(12deg);
         }
 
     &__text {
+       
 transform: skewX(12deg);
 
 @include respond(phone){
@@ -84,13 +84,15 @@ transform:translateX(-3rem);
     &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
+        overflow: hidden;
     }
 
     &:hover &__img {
        background-color: rgb(0, 0, 0);
        height: 100%;
-        transform: translateX(2rem) scale(1.4);
+        transform: translateX(1rem) scale(1.4);
         filter: blur(3px) brightness(60%);
+        overflow: hidden;
     }
 
     &:hover &__caption {
@@ -101,7 +103,7 @@ transform:translateX(-3rem);
     &:hover &__img2 {
        background-color: turquoise;
        height: 100%;
-        transform: translateX(2rem) scale(1.4);
+        transform: translateX(1rem) scale(1.4);
         filter: blur(3px) brightness(60%);
     }
 }

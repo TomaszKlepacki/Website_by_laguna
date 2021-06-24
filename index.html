@@ -13,6 +13,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <link rel="shortcut icon" type="image/png" href="img/dance_3.jpeg"> -->
 
 
@@ -31,10 +32,10 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#section-about" class="navigation__link">O nas</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Oferta zajęć</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Instruktorzy</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Napisz do nas</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Kontakt</a></li>
+                <li class="navigation__item"><a href="#section-activities" class="navigation__link">Oferta zajęć</a> </li>
+                <li class="navigation__item"><a href="#section-stories" class="navigation__link">Instruktorzy</a></li>
+                <li class="navigation__item"><a href="#section-book" class="navigation__link">Napisz do nas</a></li>
+                <li class="navigation__item"><a href="#footer" class="navigation__link">Kontakt</a></li>
             </ul>
         </nav>
     </div>
@@ -54,21 +55,24 @@
                 <span class="heading-primary--sub">Zumba to nasza pasja</span>
             </h1>
 
-            <a href="#" class="btn btn--white btn--animated">Sprawdź ofertę</a>
+            <a href="#section-activities" class="btn btn--white btn--animated">Sprawdź ofertę</a>
         </div>
 
     </header>
 
 
     <main>
-        <section class="section-about">
-            <div class="u-center-text u-margin-bottom-big">
+        <section id="section-about" class="section-about">
+
+
+            <div class="u-center-text u-margin-bottom-big" data-aos="fade-left"
+                data-aos-anchor-placement="bottom-bottom">
                 <h2 class="heading-secondary">
                     Zumba by Leguna
                 </h2>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
                 <div class="col-1-of-2">
                     <h3 class="heading-tertiary u-margin-bottom-small"> Zakochaj się w zumbie</h3>
                     <p class="paragraph">
@@ -101,9 +105,8 @@
 
             <div class="row">
                 <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon fas fa-fire"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Energia</h3>
+                    <div class="feature-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <i class="feature-box__icon fas fa-fire"></i>bottom                   <h3 class="heading-tertiary u-margin-bottom-small">Energia</h3>
                         <p class="feature-box__text">
                             Ogrom dobrej energii i maksimum zabawy
                         </p>
@@ -111,7 +114,7 @@
                 </div>
 
                 <div class="col-1-of-4">
-                    <div class="feature-box">
+                    <div class="feature-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <i class="feature-box__icon fas fa-smile-wink"></i></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Pasja</h3>
                         <p class="feature-box__text">
@@ -121,7 +124,7 @@
                 </div>
 
                 <div class="col-1-of-4">
-                    <div class="feature-box">
+                    <div class="feature-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <i class="feature-box__icon fas fa-graduation-cap"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">DOŚWIADCZENIE
                         </h3>
@@ -132,7 +135,7 @@
                 </div>
 
                 <div class="col-1-of-4">
-                    <div class="feature-box">
+                    <div class="feature-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <i class="feature-box__icon fas fa-heart"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Zadowolenie</h3>
                         <p class="feature-box__text">
@@ -144,16 +147,16 @@
 
         </section>
 
-        <section class="section-activities">
+        <section id="section-activities" class="section-activities">
 
-            <div class="u-center-text u-margin-bottom-big">
+            <div class="u-center-text u-margin-bottom-big" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <h2 class="heading-secondary">
                     Oferta zajęć:
                 </h2>
             </div>
 
-            <div class="row">
-                <div class="col-1-of-4">
+            <div class="row"  >
+                <div class="col-1-of-4" data-aos="fade-up">
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--1">
@@ -183,13 +186,13 @@
                                     <p class="card__save-only">Zapisz się</p>
                                     <p class="card__save-only">na zajęcia</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Kontakt</a>
+                                <a href="#footer" class="btn btn--white">Kontakt</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-1-of-4">
+                <div class="col-1-of-4" data-aos="fade-up">
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--2">
@@ -219,14 +222,14 @@
                                     <p class="card__save-only">Zapisz się</p>
                                     <p class="card__save-only">na zajęcia</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Kontakt</a>
+                                <a href="#footer" class="btn btn--white">Kontakt</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="col-1-of-4">
+                <div class="col-1-of-4" data-aos="fade-up">
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--3">
@@ -254,7 +257,7 @@
                                     <p class="card__save-only">Zapisz się</p>
                                     <p class="card__save-only">na zajęcia</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Kontakt</a>
+                                <a href="#footer" class="btn btn--white">Kontakt</a>
                             </div>
                         </div>
                     </div>
@@ -262,7 +265,7 @@
 
 
 
-                <div class="col-1-of-4">
+                <div class="col-1-of-4" data-aos="fade-up">
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="card__picture card__picture--4">
@@ -289,7 +292,7 @@
                                     <p class="card__save-only">Zapisz się</p>
                                     <p class="card__save-only">na zajęcia</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Kontakt</a>
+                                <a href="#footer" class="btn btn--white">Kontakt</a>
                             </div>
                         </div>
                     </div>
@@ -297,8 +300,8 @@
             </div>
 
 
-            <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn--blue">Skontaktuj się z nami</a>
+            <div class="u-center-text u-margin-top-huge" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom" >
+                <a href="#section-book" class="btn btn--blue">Skontaktuj się z nami </a>
             </div>
 
 
@@ -306,7 +309,7 @@
         </section>
 
 
-        <section class="section-stories">
+        <section id="section-stories" class="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="img/color.mp4" type="video/mp4">
@@ -314,21 +317,21 @@
                     Twoja przeglądarka nie jest wspierana
                 </video>
             </div>
-            <div class="u-center-text u-margin-bottom-big">
+            <div class="u-center-text u-margin-bottom-big" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                 <h2 class="heading-secondary">
                     Instruktorzy
                 </h2>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom">
                 <div class="story">
                     <figure class="story__shape">
                         <img src="img/moze_to.png" alt="" class="story__img">
-                        <figcaption class="story__caption">
+                        <figcaption class="story__caption" >
                             Joanna Kania
                         </figcaption>
                     </figure>
-                    <div class="story__text">
+                    <div class="story__text" >
                         <h3 class="heading-tertiary u-margin-bottom-small">Taniec wyzwala we mnie pozytywne emocje</h3>
                         <p>
                             Od dziesięciu lat prowadzę zajęcia z dziećmi. Na co dzień jestem nauczycielką wychowania
@@ -340,7 +343,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-left" data-aos-anchor-placement="bottom-bottom">
                 <div class="story">
                     <figure class="story__shape">
                         <img src="img/bez1.png" alt="" class="story__img2">
@@ -365,13 +368,14 @@
 
         </section>
 
-        <section class="section-book">
-            <div class="u-center-text u-margin-bottom-big">
+        <section id="section-book" class="section-book">
+            <div class="u-center-text u-margin-bottom-big" data-aos="fade-right "
+                data-aos-anchor-placement="bottom-bottom">
                 <h2 class="heading-secondary">
                     Napisz do nas!
                 </h2>
             </div>
-            <div class="row">
+            <div class="row" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
                 <div class="book">
                     <div class="book__form">
                         <form action="#" class="form">
@@ -402,32 +406,36 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="u-center-text u-margin-bottom-big">
+    <footer id="footer" class="footer">
+        <div class="u-center-text u-margin-bottom-big" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <h2 class="heading-secondary-footer">
                 Kontakt
             </h2>
         </div>
-        
+
 
         <div class="row">
             <!-- <div class="col-1-of-1"> -->
-                
-                <div class="footer__logo-box">
-                   
-                    <img src="img/logo.png" alt="logo" class="footer__logo">
-        
-                </div>
-                <div class="u-center-text u-margin-bottom-big">
-                   
-                
-                <div class="footer__navigation">
-                    
+
+            <div class="footer__logo-box" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+
+                <img src="img/logo.png" alt="logo" class="footer__logo">
+
+            </div>
+            <div class="u-center-text u-margin-bottom-big">
+
+
+                <div class="footer__navigation" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+
                     <ul class="footer__list-center">
-                        <li class="footer__item"><a href="#" class="footer__link">Joanna Kania</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link"><i class="fas fa-mobile-alt"> </i> &nbsp +48 517 967 261</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link"><i class="far fa-envelope"> </i> &nbsp zumbabyleguna@gmail.com</a></li>
-                            <!-- <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#footer" class="footer__link">Joanna Kania</a></li>
+                        <li class="footer__item">
+                            <a href="#footer" class="footer__link"><i class="fas fa-mobile-alt"> </i> &nbsp +48 517 967 261</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#footer" class="footer__link"><i class="far fa-envelope"> </i> &nbsp zumbabyleguna@gmail.com</a>
+                        </li>
+                        <!-- <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Terms</a></li> -->
                     </ul>
                 </div>
@@ -520,7 +528,7 @@
     </section>
 
 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -537,11 +545,31 @@
                 $(".navigation__item").click();
             }
         });
-    </script>
+    </script> -->
 
 
     <!-- <script src="js/js.js"></script> -->
 
+    <!-- <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.img', {
+            reset: true,
+            delay: 300,
+            distance: 0
+        });
+        sr.reveal('h2, p', {
+            reset: true,
+            delay: 300
+        });
+    </script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            once:true,
+        });
+    </script>
 </body>
 
 </html>
