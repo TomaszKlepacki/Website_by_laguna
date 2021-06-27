@@ -23,7 +23,7 @@ height: auto;
 }
 
 &__navigation{
-border-top: 1px solid $color-grey-dark;
+border-top: 1px solid $color-white;
 padding-top: 2rem;
 display: inline-block;
 
@@ -52,7 +52,7 @@ display:inline-block;
 &__link{
 &:link,
 &:visited {
-    color: $color-grey-light-1;
+    color: $color-white;
     text-decoration: none;
     // text-transform:none;
     display: inline-block;

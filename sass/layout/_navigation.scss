@@ -1,6 +1,10 @@
 .navigation{
+overflow: hidden;
+
     &__checkbox{
 display: none;
+
+
 
 
     }
@@ -66,6 +70,7 @@ z-index: 1500;
 opacity: 0;
 width: 0;
 transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+overflow: hidden;
 
     }
 
@@ -77,12 +82,14 @@ transform: translate(-50%,-50%);
 list-style: none;
 text-align: center;
 width: 100%;
+transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 
     }
 
     &__item{
 margin: 1rem;
+transition: transform .8s cubic-bezier(0.86,0,0.07,1);
     }
 
     &__link{
@@ -106,18 +113,27 @@ transition: all .4s ;
         &:active{
             background-position:100% ;
             color: $color-primary;
-            transform: translateX(1rem);
+            transform: translateX(2rem);
         }
+
+
+
 }
 
 &__checkbox:checked ~ &__background {
     transform: scale(80);
 }
 
+&__link:checked ~ &__background {
+    z-index:100;
+}
+
 &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
 }
+
+
 
 // ICON
 &__icon{
