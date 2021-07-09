@@ -13,10 +13,11 @@ color: inherit;
 padding: 1.5rem 2rem;
 border-radius: 2px;
 background-color: rgba($color-white, .95);
-border: none;
-border-bottom: 3px solid transparent;
+border: solid 2px $color-primary;
+// border-bottom: 3px solid transparent;
 width: 90%;
 display: block;
+
 
 
 @include respond(tab-port){

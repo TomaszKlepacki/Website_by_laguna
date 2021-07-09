@@ -18,6 +18,14 @@
     @include respond(phone){
         transform: skewX(0);
     }
+
+    @include respond(tab-port){
+        transform: skewX(0);
+    }
+
+    @include respond(tab-land){
+        transform: skewX(0);
+    }
    
 
     & > * {
@@ -39,14 +47,23 @@ transform: skewX(12deg);
         @include respond(phone){
             transform: translateX(-3rem) skewX(0);
         }
+
+
+        @include respond(tab-port){
+            transform: translateX(-3rem) skewX(0);
+        }
+
+        @include respond(tab-land){
+            transform: translateX(-3rem) skewX(0);
+        }
     }
 
     &__img{
         height: 100%;
-        transform: translateX(3rem) scale(1.1);
-        backface-visibility: hidden;
-        transition: all .5s;
-        background-color: transparent;
+        // transform: translateX(3rem) scale(1.1);
+        // backface-visibility: hidden;
+        // transition: all .5s;
+        // background-color: transparent;
 
        
         
@@ -61,49 +78,59 @@ transform: skewX(12deg);
 
     &__text {
        
-transform: skewX(12deg);
+// transform: skewX(12deg);
+text-align: justify;
 
 @include respond(phone){
 transform:translateX(-3rem);
 }
+
+@include respond(tab-land){
+    transform: translateX(-3rem) skewX(0);
+}
+
+@include respond(tab-port){
+    transform: translateX(-3rem) skewX(0);
+}
+
     }
 
-    &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-        color: $color-white;
-        font-size: 1.7rem;
-        text-align: center;
-        opacity: 0;
-        transition: all ease .5s;
-        backface-visibility: hidden;
-    }
+    // &__caption {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, 20%);
+    //     color: $color-white;
+    //     font-size: 1.7rem;
+    //     text-align: center;
+    //     opacity: 0;
+    //     transition: all ease .5s;
+    //     backface-visibility: hidden;
+    // }
 
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-        overflow: hidden;
-    }
+    // &:hover &__caption {
+    //     opacity: 1;
+    //     transform: translate(-50%, -50%);
+    //     overflow: hidden;
+    // }
 
-    &:hover &__img {
-       background-color: rgb(0, 0, 0);
-       height: 100%;
-        transform: translateX(1rem) scale(1.4);
-        filter: blur(3px) brightness(60%);
-        overflow: hidden;
-    }
+    // &:hover &__img {
+    //    background-color: rgb(0, 0, 0);
+    //    height: 100%;
+    //     transform: translateX(1rem) scale(1.4);
+    //     filter: blur(3px) brightness(60%);
+    //     overflow: hidden;
+    // }
 
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
+    // &:hover &__caption {
+    //     opacity: 1;
+    //     transform: translate(-50%, -50%);
+    // }
 
-    &:hover &__img2 {
-       background-color: turquoise;
-       height: 100%;
-        transform: translateX(1rem) scale(1.4);
-        filter: blur(3px) brightness(60%);
-    }
+    // &:hover &__img2 {
+    //    background-color: turquoise;
+    //    height: 100%;
+    //     transform: translateX(1rem) scale(1.4);
+    //     filter: blur(3px) brightness(60%);
+    // }
 }
