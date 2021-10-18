@@ -9,10 +9,10 @@
   "author": "Tomasz Klepacki",
   "license": "ISC",
   "dependencies": {
+    "g": "^2.0.1",
     "live-server": "^1.2.1"
   },
   "devDependencies": {
     "node-sass": "^6.0.0"
   }
 }
-
